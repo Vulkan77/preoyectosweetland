@@ -101,15 +101,19 @@ border:2px none ;
 
 /* menú de opciones */
 .logo{
-    
+    width: 250px;
+    height: 250px;
+    display: block;
+    margin: 45px auto;
 }
 
 nav {
     padding: 1px;
     position: fixed;
     top: 0;
+    left: 0;
     width: 100%;    
-    background: rgba(83, 83, 101, 0.5);
+    background: rgba(83, 83, 101, 0.5);    
 }
 
 nav ul {
@@ -144,4 +148,19 @@ nav ul li a:hover {
 
 html {
     scroll-behavior: smooth;
+}
+
+h5 {
+  font-size: 24px;           /* Tamaño más grande */
+  text-align: center;        /* Centrado */
+  color: #5c4033;            /* Un tono marrón suave */
+  margin: 0;
+}
+
+h2 {
+  font-size: 48px;           /* Mucho más grande */
+  text-align: center;
+  color: #5c4033;
+  margin: 0;
+  font-weight: bold;
 }
