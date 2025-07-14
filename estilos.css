@@ -498,3 +498,55 @@ video {
 .whatsapp-button:hover {
   background-color: #1ebe5b;
 }
+
+.page-header {
+  background-color: #fde6f0;
+  padding: 50px 20px;
+  text-align: center;
+  border-bottom: 1px solid #f3cfe4;
+}
+
+.page-header h1 {
+  font-size: 32px;
+  color: #b84aa6;
+  margin: 0;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+.formulario-contacto {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 30px;
+}
+
+.formulario-contacto input,
+.formulario-contacto textarea {
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  font-family: inherit;
+  font-size: 16px;
+}
+
+.formulario-contacto textarea {
+  resize: vertical;
+  min-height: 120px;
+}
+
+.formulario-contacto button {
+  background-color: #b84aa6;
+  color: white;
+  padding: 12px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.formulario-contacto button:hover {
+  background-color: #9e3a90;
+}
+
