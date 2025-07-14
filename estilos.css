@@ -1,7 +1,9 @@
+
 body {
   margin: 0;
   padding: 0;
-  font-family: Arial, sans-serif;
+  font-family: sans-serif;
+  background-color: #111;
 }
 
 .slider {
@@ -10,13 +12,13 @@ body {
   margin: 50px auto;
   overflow: hidden;
   border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0,0,0,0.3);
+  box-shadow: 0 0 10px rgba(255,255,255,0.2);
 }
 
 .slides {
   display: flex;
   width: 300%;
-  animation: slide 12s infinite;
+  animation: slide 15s infinite;
 }
 
 .slide {
@@ -24,11 +26,12 @@ body {
   flex-shrink: 0;
 }
 
-.slide img {
+video {
   width: 100%;
   height: auto;
   display: block;
-    
+}
+
 /* Animación */
 @keyframes slide {
   0%    { transform: translateX(0%); }
