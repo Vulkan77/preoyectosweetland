@@ -170,38 +170,76 @@ nav ul li a:hover {
   border-radius: 5px;
 }
 
-/* --- SLIDER --- */
+/* === SLIDER DEFINITIVO CON CONTROL TOTAL === */
+
 .slider {
-  overflow: hidden;
   width: 100%;
   max-width: 100%;
-  height: auto;
-  margin: 0 auto;
+  height: 350px;
+  overflow: hidden;
+  position: relative;
+  margin: 20px auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #f0f0f0;
 }
 
 .slides {
   display: flex;
-  width: 100%;
-  overflow-x: scroll;
-  scroll-snap-type: x mandatory;
-  scroll-behavior: smooth;
-  -webkit-overflow-scrolling: touch;
+  height: 100%;
+  animation: slide-animation 30s infinite ease-in-out;
 }
 
 .slide {
   flex: 0 0 100%;
-  scroll-snap-align: start;
-  height: auto;
-  position: relative;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 .imgslide {
   width: 100%;
-  height: auto;
-  max-height: 400px; /* Reducción visible en PC */
+  height: 100%;
+  max-height: 280px;
   object-fit: cover;
   display: block;
 }
+
+/* ANIMACIÓN SUAVE */
+@keyframes slide-animation {
+  0%    { transform: translateX(0%); }
+  16%   { transform: translateX(0%); }
+
+  20%   { transform: translateX(-100%); }
+  36%   { transform: translateX(-100%); }
+
+  40%   { transform: translateX(-200%); }
+  56%   { transform: translateX(-200%); }
+
+  60%   { transform: translateX(-300%); }
+  76%   { transform: translateX(-300%); }
+
+  80%   { transform: translateX(-400%); }
+  92%   { transform: translateX(-400%); }
+
+  96%   { transform: translateX(-500%); }
+  100%  { transform: translateX(-500%); }
+}
+
+/* === AJUSTES PARA CELULAR === */
+@media screen and (max-width: 768px) {
+  .slider {
+    height: 225px;
+  }
+
+  .imgslide {
+    max-height: 180px;
+  }
+}
+
+
 
 
 /* --- FRASE Y VIDEO --- */
@@ -314,6 +352,12 @@ video {
   .personal {
     font-size: 20px;
   }
+
+  @media screen and (max-width: 768px) {
+  .slider {
+    height: 200px;
+  }
+}
 
   .menu ul li {
   margin: 10px 0;
