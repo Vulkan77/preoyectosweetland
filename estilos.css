@@ -113,7 +113,8 @@ nav {
     top: 0;
     left: 0;
     width: 100%;    
-    background: rgba(83, 83, 101, 0.5);    
+    background: rgba(83, 83, 101, 0.5);
+    z-index: 1000; /* Asegura que esté por encima del contenido */    
 }
 
 nav ul {
@@ -137,7 +138,7 @@ nav ul li a {
 }
 
 nav ul li a:hover {
-    background: rgba(167, 170, 172, 0.559);
+    background: rgba(83, 83, 101, 0.5);
     border-radius: 5px; /* Redondea los bordes para un mejor diseño */
 }
 
@@ -148,6 +149,42 @@ nav ul li a:hover {
 
 html {
     scroll-behavior: smooth;
+}
+/* Submenú oculto inicialmente */
+.submenu {
+    position: relative;
+}
+.submenu .dropdown {
+    display: none;
+    position: absolute;
+    top: 100%; /* Justo debajo del enlace principal */
+    left: 0;
+    background-color: rgba(83, 83, 101, 0.5);
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    border-radius: 0 0 5px 5px;
+    min-width: 150px;
+    z-index: 1001; /* Encima del resto */
+}
+
+/* Mostrar submenú al pasar el mouse */
+.submenu:hover .dropdown {
+    display: block;
+}
+
+/* Estilo para los enlaces del submenú */
+.submenu .dropdown li a {
+    display: block;
+    padding: 10px;
+    color: white;
+    text-decoration: none;
+    text-align: left;
+    white-space: nowrap;
+}
+
+.submenu .dropdown li a:hover {
+    background: rgba(83, 83, 101, 0.95);
 }
 
 h5 {
