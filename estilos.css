@@ -173,26 +173,36 @@ nav ul li a:hover {
 /* --- SLIDER --- */
 .slider {
   overflow: hidden;
-  margin: 20px 0;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
 }
 
 .slides {
   display: flex;
   width: 100%;
-  overflow-x: auto;
+  overflow-x: scroll;
   scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
 }
 
 .slide {
   flex: 0 0 100%;
   scroll-snap-align: start;
+  height: auto;
+  position: relative;
 }
 
 .imgslide {
   width: 100%;
   height: auto;
+  max-height: 400px; /* Reducción visible en PC */
+  object-fit: cover;
   display: block;
 }
+
 
 /* --- FRASE Y VIDEO --- */
 .order {
@@ -303,14 +313,19 @@ video {
   .texto,
   .personal {
     font-size: 20px;
-    .menu ul {
+  }
+
+  .menu ul li {
+  margin: 10px 0;
+}
+
+  .menu ul {
   flex-direction: column;
   align-items: center;
 }
 
-.menu ul li {
-  margin: 10px 0;
-}
+.imgslide {
+    max-height: 250px;
   }
 
   .Title-producto {
