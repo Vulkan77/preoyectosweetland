@@ -1,4 +1,5 @@
-body{background-color: rgb(85, 183, 229);}
+body{background-color: rgb(85, 183, 229);
+margin: 0;}
 
 h1{color: rgb(121, 30, 124);}
 
@@ -79,7 +80,7 @@ padding: 0.05px;
 border:2px none ;
 }
 
-.catalogo{
+.productos{
 display: grid;
 grid-template-columns: auto auto auto;
 gap: 10px;
@@ -98,12 +99,13 @@ margin: 20px;
 padding: 60px;
 border:2px none ;
 }
+
 header{
     background-color: #f7d5d8;
     background-size: cover;
     background-position: center;
     height: 45vh;
-    padding: 10px 0;    
+    padding: 10px 0;       
 }
 
 /* menú de opciones */
@@ -149,7 +151,7 @@ nav ul li a:hover {
     border-radius: 5px; /* Redondea los bordes para un mejor diseño */
 }
 
-.wrapper {
+.menu {
     width: 80%;
     margin-top: 50px; /* Aumenta el margen superior para compensar el menú fijo */
 }
@@ -212,33 +214,56 @@ h2 {
   font-weight: bold;
 }
 
-.categoria {
-  display: flex;
-  justify-content: flex-start; /* alineado a la izquierda */
-  padding: 40px;
-  background-color: #ffffff;
+/* FONDO ROSADO PARA TÍTULO */
+.Title-Variedad-de-productos {
+  background-color: #f8d1d5;
+  padding: 20px 0;
+  text-align: center;
+  box-sizing: border-box;
+  margin: 0;
+  width: 100%;
 }
 
-.Tortas {
+.small-title {
+  font-size: 18px;
+  color: #3a2d1e;
+  margin: 0;
+}
+
+.Title-producto {
+  font-size: 36px;
+  color: #3a2d1e;
+  margin: 0;
+}
+
+/* FONDO BLANCO PARA PRODUCTOS */
+.categoria {
+  display: flex;
+  justify-content: center;  /* centra las tarjetas horizontalmente */
+  gap: 40px;
+  padding: 10px 0;
+  background-color: #ffffff;
+  max-width: 100%;
+  box-sizing: border-box;
+}
+
+/* TARJETA INDIVIDUAL */
+.tarjeta {
   width: 250px;
   background-color: #fff;
   border-radius: 15px;
-  overflow: hidden;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   text-align: center;
+  overflow: hidden;
 }
 
-.Tortas img {
+.tarjeta img {
   width: 100%;
   height: auto;
   display: block;
 }
 
-.Contenido-Torta {
-  padding: 15px 10px;
-}
-
-.Contenido-Torta h5 {
+.tarjeta h5 {
   font-size: 22px;
   color: #3a2d1e;
   margin: 10px 0;
@@ -253,7 +278,7 @@ h2 {
   text-decoration: none;
   transition: all 0.3s ease;
   font-weight: 500;
-  margin-top: 5px;
+  margin-bottom: 15px;
 }
 
 .explorar:hover {
@@ -261,4 +286,131 @@ h2 {
   color: #fff;
 }
 
+@keyframes slide {
+	0% { transform: translateX(0); }
+	10% { transform: translateX(0); }
 
+	15% { transform: translateX(-100%); }
+	30% { transform: translateX(-100%); }
+
+	35% { transform: translateX(-200%); }
+	50% { transform: translateX(-200%); }
+
+	55% { transform: translateX(-300%); }
+	70% { transform: translateX(-300%); }
+
+	75% { transform: translateX(-400%); }
+	90% { transform: translateX(-400%); }
+
+	95% { transform: translateX(-500%); }
+	100% { transform: translateX(-500%); }
+}
+
+* { box-sizing: border-box; }
+
+html { scroll-behavior: smooth; }
+
+body {
+	font-family: sans-serif;
+}
+
+.wrapper {
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+.slider {
+	position: relative;
+}
+
+.slides {
+	position: relative;
+	display: flex;
+	overflow: hidden;
+}
+
+.slide {
+	width: 100vw;
+	flex-shrink: 0;
+	animation-name: slide;
+	animation-duration: 20s;
+	animation-iteration-count: infinite;
+	animation-timing-function: linear;
+}
+
+.slides:hover .slide {
+	animation-play-state: paused;
+}
+
+.slide img {
+	width: 100%;
+	vertical-align: top;
+}
+
+.slide a {
+	width: 100%;
+	display: inline-block;
+	position: relative;
+}
+
+.caption {
+	color: white;
+	text-shadow: 1px 1px black;
+	font-size: 8vw;
+	position: absolute;
+	bottom: 8vw;
+	right: 4vw;
+}
+
+.slide:target {
+	animation-name: none;
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 50;
+}
+
+.slider-controler {
+	position: absolute;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	text-align: center;
+	padding: 5px;
+	background-color: rgba(0,0,0,0.5);
+	z-index: 100;
+}
+
+.slider-controler li {
+	margin: 0 0.5rem;
+	display: inline-block;
+	vertical-align: top;
+}
+
+.slider-controler a {
+	display: inline-block;
+	vertical-align: top;
+	text-decoration: none;
+	color: white;
+	font-size: 1.5rem;
+}
+
+@media only screen and (min-width: 1200px) {
+	.slide {
+		width: 1200px;
+    height: 600px;
+	}
+
+	.caption {
+		font-size: 96px;
+		bottom: 96px;
+		right: 50px;
+	}
+
+  .imgslide{
+  width: 1200px;
+  height: 600px;
+  }
+}
