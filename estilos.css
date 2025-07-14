@@ -1,3 +1,90 @@
+@media (max-width: 600px) {
+  .menu {
+    flex-direction: column;
+  }
+
+  .container {
+    padding: 10px;
+  }
+}
+
+/* --- Ajustes responsive generales --- */
+* {
+  box-sizing: border-box;
+}
+
+img, video {
+  max-width: 100%;
+  height: auto;
+}
+
+.wrapper {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 10px;
+}
+
+/* --- Mobile First Media Query --- */
+@media screen and (max-width: 768px) {
+  .title, .texto, .order {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .contenedor,
+.contenedor1 {
+  width: 100%;
+  max-width: 600px;
+  padding: 20px;
+  border: 2px none blue;
+  box-sizing: border-box;
+  background-color: white; /* opcional para mejor contraste */
+}
+
+  .contacto, .info {
+    width: 90%;
+    height: auto;
+    font-size: 20px;
+    padding: 10px;
+  }
+
+  .categoria {
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+  }
+
+  .productos {
+    grid-template-columns: 1fr;
+  }
+
+  .caption {
+    font-size: 6vw;
+    bottom: 20px;
+    right: 10px;
+  }
+
+  nav ul {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  nav {
+    position: relative;
+  }
+
+  .menu {
+    margin-top: 0;
+  }
+
+  .logo {
+    width: 150px;
+    height: auto;
+    margin: 20px auto;
+  }
+}
+
 body{background-color: rgb(85, 183, 229);
 margin: 0;}
 
@@ -14,12 +101,12 @@ h2{color: rgb(122, 11, 201);font-size: 30px;}
     justify-content: space-around;
 }
 
-.texto{
-font-size: 30px;
-font-family: 'Times New Roman';
-color: rgb(170, 29, 128);
-display: flex;
-justify-content: left;
+.texto {
+  font-size: 28px;
+  font-family: 'Times New Roman';
+  color: rgb(170, 29, 128);
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .content{
@@ -28,9 +115,12 @@ font-size: 20px;
 
 p{font-size: 20px;font-family:sans-serif;}
 
-.order{
-display: flex;
-justify-content: space-around;
+.order {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  padding: 20px;
 }
 
 .contenedor{
@@ -58,9 +148,13 @@ margin: 10px;
 padding: 40px;
 border: 2px none blue;
 }
-video{
-width: 300px;    
-height: 300px;
+
+video {
+  width: 100%;
+  max-width: 400px;
+  height: auto;
+  display: block;
+  margin: 0 auto;
 }
 
 .productos{
@@ -117,13 +211,16 @@ header{
 }
 
 nav {
-    padding: 1px;
+    height: 60px;
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;    
-    background: rgba(83, 83, 101, 0.5);
-    z-index: 1000; /* Asegura que esté por encima del contenido */    
+    background: rgba(83, 83, 101, 0.7);
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Asegura que esté por encima del contenido */    
 }
 
 nav ul {
