@@ -163,9 +163,9 @@ html {
     padding: 0;
     margin: 0;
     list-style: none;
-    border-radius: 0 0 5px 5px;
+    border-radius: 5px;
     min-width: 150px;
-    z-index: 1001; /* Encima del resto */
+    z-index: 1000; /* Encima del resto */
 }
 
 /* Mostrar submenú al pasar el mouse */
@@ -176,16 +176,19 @@ html {
 /* Estilo para los enlaces del submenú */
 .submenu .dropdown li a {
     display: block;
-    padding: 10px;
+    padding: 10px 20px;
     color: white;
     text-decoration: none;
     text-align: left;
     white-space: nowrap;
+
 }
 
 .submenu .dropdown li a:hover {
     background: rgba(83, 83, 101, 0.95);
 }
+
+/* Sección de Variedad de Productos*/
 
 h5 {
   font-size: 24px;           /* Tamaño más grande */
@@ -201,3 +204,53 @@ h2 {
   margin: 0;
   font-weight: bold;
 }
+
+.categoria {
+  display: flex;
+  justify-content: flex-start; /* alineado a la izquierda */
+  padding: 40px;
+  background-color: #ffffff;
+}
+
+.Tortas {
+  width: 250px;
+  background-color: #fff;
+  border-radius: 15px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+
+.Tortas img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+.Contenido-Torta {
+  padding: 15px 10px;
+}
+
+.Contenido-Torta h5 {
+  font-size: 22px;
+  color: #3a2d1e;
+  margin: 10px 0;
+}
+
+.explorar {
+  display: inline-block;
+  padding: 8px 20px;
+  border: 2px solid #e6a6ac;
+  border-radius: 30px;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s ease;
+  font-weight: 500;
+  margin-top: 5px;
+}
+
+.explorar:hover {
+  background-color: #e6a6ac;
+  color: #fff;
+}
+
