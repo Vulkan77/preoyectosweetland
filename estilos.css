@@ -98,6 +98,13 @@ margin: 10px;
 padding: 40px;
 border: 2px none blue;
 }
+header{
+    background-color: #f7d5d8;
+    background-size: cover;
+    background-position: center;
+    height: 45vh;
+    padding: 10px 0;    
+}
 video{
 width: 300px;    
 height: 300px;
