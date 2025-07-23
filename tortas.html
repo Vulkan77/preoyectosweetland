@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>tortas</title>
     <link rel="stylesheet" href="estilos.css">
+    
 </head>
 
 <body>
@@ -36,43 +37,55 @@
 <!-- GALERÍA DE TORTAS -->
 <div class="galeria-productos">
 
-  <div class="producto">
-    <img src="torta rosa.jpg" alt="Torta Rosa">
-    <h3>Torta Rosa</h3>
-    <p>Torta decorada con rosas en crema, ideal para celebraciones femeninas.</p>
+    <div class="producto">
+      <img src="torta rosa.jpg" alt="Torta Rosa">
+      <h3>Torta Rosa</h3>
+      <p>Torta decorada con rosas en crema, ideal para celebraciones femeninas.</p>
+      <button class="btn-agregar" onclick="addToCart('Torta Rosa', 70000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="tortapersonalizada.jpg" alt="Torta Personalizada">
+      <h3>Torta Personalizada</h3>
+      <p>Diseño exclusivo hecho a mano según tu temática favorita.</p>
+      <button class="btn-agregar" onclick="addToCart('Torta Personalizada', 75000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="tortapersonalizadahellokitty.jpg" alt="Torta Hello Kitty">
+      <h3>Torta Hello Kitty</h3>
+      <p>Perfecta para cumpleaños infantiles. Encanto y ternura en cada capa.</p>
+      <button class="btn-agregar" onclick="addToCart('Torta Hello Kitty', 73000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="tortahappybirthday.jpg" alt="Torta Happy Birthday">
+      <h3>Torta Happy Birthday</h3>
+      <p>Decoración colorida con mensaje especial de cumpleaños.</p>
+      <button class="btn-agregar" onclick="addToCart('Torta Happy Birthday', 72000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="tortasonic.jpg" alt="Torta Sonic">
+      <h3>Torta Sonic</h3>
+      <p>Torta temática de Sonic, ideal para fans del personaje veloz.</p>
+      <button class="btn-agregar" onclick="addToCart('Torta Sonic', 74000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="tortaauyama.jpg" alt="Torta de Auyama">
+      <h3>Torta de Auyama</h3>
+      <p>Deliciosa torta tradicional con bocadillo y queso, sabor casero.</p>
+      <button class="btn-agregar" onclick="addToCart('Torta de Auyama', 69000)">Agregar al carrito</button>
+    </div>
+
   </div>
 
-  <div class="producto">
-    <img src="tortapersonalizada.jpg" alt="Torta Personalizada">
-    <h3>Torta Personalizada</h3>
-    <p>Diseño exclusivo hecho a mano según tu temática favorita.</p>
-  </div>
+  <!-- Enlace flotante al carrito -->
+  <a href="carrito.html" class="cart-link">🛒 Ver carrito</a>
 
-  <div class="producto">
-    <img src="tortapersonalizadahellokitty.jpg" alt="Torta Hello Kitty">
-    <h3>Torta Hello Kitty</h3>
-    <p>Perfecta para cumpleaños infantiles. Encanto y ternura en cada capa.</p>
-  </div>
 
-  <div class="producto">
-    <img src="tortahappybirthday.jpg" alt="Torta Happy Birthday">
-    <h3>Torta Happy Birthday</h3>
-    <p>Decoración colorida con mensaje especial de cumpleaños.</p>
-  </div>
-
-  <div class="producto">
-    <img src="tortasonic.jpg" alt="Torta Sonic">
-    <h3>Torta Sonic</h3>
-    <p>Torta temática de Sonic, ideal para fans del personaje veloz.</p>
-  </div>
-
-  <div class="producto">
-    <img src="tortaauyama.jpg" alt="Torta de Auyama">
-    <h3>Torta de Auyama</h3>
-    <p>Deliciosa torta tradicional con bocadillo y queso, sabor casero.</p>
-  </div>
-
-</div>
+<script src="carrito.js"></script>
 
 </body>
 </html>

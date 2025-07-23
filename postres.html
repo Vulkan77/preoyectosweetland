@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>postres</title>
     <link rel="stylesheet" href="estilos.css">
+    
 </head>
 
 <body>
@@ -35,43 +36,53 @@
 
 <div class="galeria-productos">
 
-  <div class="producto">
-    <img src="galletaschocolate.jpg" alt="Galletas de chocolate">
-    <h3>Galletas de Chocolate</h3>
-    <p>Suaves y crocantes, con chips de chocolate.</p>
+    <div class="producto">
+      <img src="galletaschocolate.jpg" alt="Galletas de chocolate">
+      <h3>Galletas de Chocolate</h3>
+      <p>Suaves y crocantes, con chips de chocolate.</p>
+      <button class="btn-agregar" onclick="addToCart('Galletas de Chocolate', 3000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="galletaspersonalizadas.jpg" alt="Galletas Personalizadas">
+      <h3>Galletas Personalizadas</h3>
+      <p>Diseños únicos para cada ocasión especial.</p>
+      <button class="btn-agregar" onclick="addToCart('Galletas Personalizadas', 3500)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="galletasrellenas.jpg" alt="Galletas Rellenas">
+      <h3>Galletas Rellenas</h3>
+      <p>Rellenas de chocolate o masmello, ideales para regalar.</p>
+      <button class="btn-agregar" onclick="addToCart('Galletas Rellenas', 4000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="cupcakes.jpg" alt="Cupcakes decorados">
+      <h3>Cupcakes Decorados</h3>
+      <p>Coloridos y con sabor a vainilla o chocolate.</p>
+      <button class="btn-agregar" onclick="addToCart('Cupcakes Decorados', 5000)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="cupcakes2.jpg" alt="Cupcakes Temáticos">
+      <h3>Cupcakes Temáticos</h3>
+      <p>Perfectos para fiestas y celebraciones infantiles.</p>
+      <button class="btn-agregar" onclick="addToCart('Cupcakes Temáticos', 5500)">Agregar al carrito</button>
+    </div>
+
+    <div class="producto">
+      <img src="cookies 2.jpg" alt="Galletas de sabores">
+      <h3>Galletas de Sabores</h3>
+      <p>Con sus diferentes rellenos y diferentes sabores.</p>
+      <button class="btn-agregar" onclick="addToCart('Galletas de Sabores', 3800)">Agregar al carrito</button>
+    </div>
+
   </div>
 
-  <div class="producto">
-    <img src="galletaspersonalizadas.jpg" alt="Galletas Personalizadas">
-    <h3>Galletas Personalizadas</h3>
-    <p>Diseños únicos para cada ocasión especial.</p>
-  </div>
+  <a href="carrito.html" class="cart-link">🛒 Ver carrito</a>
 
-  <div class="producto">
-    <img src="galletasrellenas.jpg" alt="Galletas Rellenas">
-    <h3>Galletas Rellenas</h3>
-    <p>Rellenas de chocolate o masmello, ideales para regalar.</p>
-  </div>
-
-  <div class="producto">
-    <img src="cupcakes.jpg" alt="Cupcakes decorados">
-    <h3>Cupcakes Decorados</h3>
-    <p>Coloridos y con sabor a vainilla o chocolate.</p>
-  </div>
-
-  <div class="producto">
-    <img src="cupcakes2.jpg" alt="Cupcakes">
-    <h3>Cupcakes Temáticos</h3>
-    <p>Perfectos para fiestas y celebraciones infantiles.</p>
-  </div>
-
-  <div class="producto">
-    <img src="cookies 2.jpg" alt="galletaschocolate">
-    <h3>Galletas de sabores</h3>
-    <p>Con sus diferentes rellenos y diferentes sabores.</p>
-  </div>
-
-</div>
+<script src="carrito.js"></script>
 
 </body>
 </html>
