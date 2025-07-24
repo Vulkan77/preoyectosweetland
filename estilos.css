@@ -74,12 +74,11 @@ header {
 
 /* MENÚ SUPERIOR FIJO */
 #menu {
-  font-size: 17px;  
+  font-size: 17px;      
   position: fixed;
   top: 0;
   left: 0;
   width: 100%;  
-  height: 50px;
   background: rgba(83, 83, 101, 0.7); /* gris-violeta translúcido */
   z-index: 1000;
   padding: 10px 0;
@@ -372,7 +371,7 @@ video {
 /* --- RESPONSIVE --- */
 @media screen and (max-width: 768px) {
   .texto,
-  .personal {
+  .personal,{
     font-size: 20px;
   }
 
