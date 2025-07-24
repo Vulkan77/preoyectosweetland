@@ -37,15 +37,16 @@ h1, h2 {
 
 header {
   background-color: #f7d5d8;
-  padding: 10px 0;
+  padding: 20px 0;
   height: 330px;  
 }
 
-#home {
-  background-color: #f7d5d8;
-  padding: 10px 0;
-  height: 330px;  
+.logo1{
+  width: 250px;
+  display: block;
+  margin: 5px auto;  
 }
+
 
 .Title-Variedad-de-productos {
   background-color: #f8d1d5;
@@ -73,8 +74,7 @@ header {
 
 /* MENÚ SUPERIOR FIJO */
 #menu {
-  font-size: 17px;
-  font-family: Arial, Helvetica, sans-serif;
+  font-size: 17px;  
   position: fixed;
   top: 0;
   left: 0;
@@ -103,9 +103,9 @@ header {
 #menu ul li a {
   color: white;
   text-decoration: none;
-  padding: 5px 20px;
+  padding: 4px 20px;
   display: block;
-  transition: background 0.3s;
+  transition: background 0.4s;
   border-radius: 5px;
 }
 
@@ -149,7 +149,7 @@ header {
 .logo {
   width: 250px;
   display: block;
-  margin: 50px auto;
+  margin: 45px auto;
 }
 
 /* --- MENÚ --- */
