@@ -1,0 +1,48 @@
+body {
+    font-family: 'Segoe UI', sans-serif;
+    padding: 20px;
+    background-color: #fff0fb;
+  }
+  h1 {
+    color: #a155b9;
+  }
+  ul {
+    list-style: none;
+    padding: 0;
+  }
+  li {
+    background: #fff;
+    margin-bottom: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  }
+  .acciones {
+    margin-top: 20px;
+  }
+  .btn {
+    padding: 10px 15px;
+    margin-right: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  .btn-whatsapp {
+    background-color: #25D366;
+    color: white;
+  }
+  .btn-vaciar {
+    background-color: #ff4d4d;
+    color: white;
+  }
+  .btn:hover {
+    opacity: 0.9;
+  }
+  .volver {
+    display: inline-block;
+    margin-top: 30px;
+    text-decoration: none;
+    color: #a155b9;
+    font-weight: bold;
+  }

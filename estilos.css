@@ -64,18 +64,21 @@ header {
 }
 
 /* MENÚ SUPERIOR FIJO */
-.menu {
+#menu {
+  font-size: 17px;
+  font-family: Arial, Helvetica, sans-serif;
   position: fixed;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 100%;  
+  height: 50px;
   background: rgba(83, 83, 101, 0.7); /* gris-violeta translúcido */
   z-index: 1000;
   padding: 10px 0;
   backdrop-filter: blur(5px);
 }
 
-.menu ul {
+#menu ul {
   list-style: none;
   display: flex;
   justify-content: center;
@@ -84,26 +87,26 @@ header {
   padding: 0;
 }
 
-.menu ul li {
+#menu ul li {
   margin: 0 15px;
   position: relative;
 }
 
-.menu ul li a {
+#menu ul li a {
   color: white;
   text-decoration: none;
-  padding: 10px 20px;
+  padding: 5px 20px;
   display: block;
   transition: background 0.3s;
   border-radius: 5px;
 }
 
-.menu ul li a:hover {
+#menu ul li a:hover {
   background: rgba(255, 255, 255, 0.2);
 }
 
 /* SUBMENÚ */
-.submenu .dropdown {
+#submenu .dropdown {
   display: none;
   position: absolute;
   background: rgba(83, 83, 101, 0.95);
@@ -112,11 +115,11 @@ header {
   border-radius: 5px;
 }
 
-.submenu:hover .dropdown {
+#submenu:hover .dropdown {
   display: block;
 }
 
-.submenu .dropdown li a {
+#submenu .dropdown li a {
   white-space: nowrap;
 }
 
@@ -138,7 +141,7 @@ header {
 .logo {
   width: 250px;
   display: block;
-  margin: 20px auto;
+  margin: 50px auto;
 }
 
 /* --- MENÚ --- */
