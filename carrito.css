@@ -111,27 +111,6 @@ p {
   flex: 1;
   min-width: 300px;
 }
-/* Mejora los labels con íconos */
-label {
-  display: flex;
-  align-items: center;
-  gap: 8px;
-  font-weight: 500;
-  margin-bottom: 6px;
-  color: #333;
-}
-
-/* Tamaño equilibrado para los íconos dentro de los labels */
-label i.fa {
-  font-size: 16px;
-  color: #5e5e5e;
-}
-
-/* Tamaño más pequeño para las tarjetas de crédito */
-.icon-container i {
-  font-size: 24px;
-  margin-right: 4px;
-}
 
 input[type="text"] {
   width: 100%;
