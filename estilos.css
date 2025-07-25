@@ -44,7 +44,16 @@ header {
 .logo1{
   width: 250px;
   display: block;
-  margin: 5px auto;  
+  margin: 5px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* sombra base */
+  border-radius: 50%; /* si deseas que la imagen se mantenga redonda */   
+}
+
+/* Al pasar el mouse */
+.logo1:hover {
+  transform: translateY(-5px); /* se "levanta" */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* sombra más intensa */
 }
 
 
@@ -149,7 +158,16 @@ header {
 .logo {
   width: 250px;
   display: block;
-  margin: 45px auto;  
+  margin: 45px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* sombra base */
+  border-radius: 50%; /* si deseas que la imagen se mantenga redonda */  
+}
+
+/* Al pasar el mouse */
+.logo:hover {
+  transform: translateY(-5px); /* se "levanta" */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* sombra más intensa */
 }
 
 /* --- MENÚ --- */
@@ -598,14 +616,14 @@ video {
   background-color: #1ebe5b;
 }
 
-.page-header {
+#page-header {
   background-color: #fde6f0;
   padding: 50px 20px;
   text-align: center;
   border-bottom: 1px solid #f3cfe4;
 }
 
-.page-header h1 {
+#page-header h1 {
   font-size: 32px;
   color: #b84aa6;
   margin: 0;

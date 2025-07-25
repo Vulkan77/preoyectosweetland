@@ -107,3 +107,18 @@ function renderCart() {
     }
 
     renderCart();
+
+// Mostrar pantalla de carga antes de mostrar el contenido
+window.addEventListener("load", function () {
+  const loader = document.getElementById("loader");
+  const contenido = document.getElementById("contenido-carrito");
+
+  if (loader && contenido) {
+    // Oculta el loader después de 1.5 segundos (ajustable)
+    setTimeout(() => {
+      loader.style.display = "none";
+      contenido.style.display = "block";
+    }, 1500);
+  }
+});
+

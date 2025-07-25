@@ -4,14 +4,32 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Carrito de Compras</title>
-  <link rel="stylesheet" href="carrito.css" />
+  <link rel="stylesheet" href="estilos.css">
+  <link rel="stylesheet" href="carrito.css" />  
   <!-- Font Awesome CDN (versión completa y actual) -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
   
+
+
 </head>
 
 <body>
+  
 
+<header id="home">
+  <img src="logo-fotor-2025071492551.png" alt="Logo" class="logo"/>
+    
+</header>
+
+ <!-- Loader -->
+ <div id="loader" class="loader-container">
+  <img src="cupcake-rosa.png" class="loader-cupcake" alt="Cargando...">
+  <p class="loader-text">Cargando tu carrito dulce...</p>
+</div>
+
+<!-- Contenido real del carrito -->
+<div id="contenido-carrito" style="display: none;">
+</div>
   <h1>Tu Carrito de Compras</h1>
 
   <ul id="cart-list"></ul>
@@ -96,10 +114,8 @@
   </div>
 </div>
 
+  <a href="#" onclick="history.back();" class="volver">← Volver a la tienda</a>
 
-
-
-  <a href="index.html" class="volver">← Volver a la tienda</a>
 
   <script src="carrito.js"></script>
 </body>

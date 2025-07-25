@@ -1,53 +1,82 @@
+
+
 body {
-    font-family: 'Segoe UI', sans-serif;
-    padding: 20px;
-    background-color: #fff0fb;
-  }
-  h1 {
-    color: #a155b9;
-  }
-  ul {
-    list-style: none;
-    padding: 0;
-  }
-  li {
-    background: #fff;
-    margin-bottom: 10px;
-    padding: 10px;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
-  }
-  .acciones {
-    margin-top: 20px;
-  }
-  .btn {
+  font-family: 'Segoe UI', sans-serif;
+  padding: 0px;
+  background-color: #fff0fb;
+}
+
+/* --- LOGO --- */
+.logo {
+  width: 250px;
+  display: block;
+  margin: 30px auto;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2); /* sombra base */
+  border-radius: 50%; /* si deseas que la imagen se mantenga redonda */  
+}
+
+/* Al pasar el mouse */
+.logo:hover {
+  transform: translateY(-5px); /* se "levanta" */
+  box-shadow: 0 12px 20px rgba(0, 0, 0, 0.3); /* sombra más intensa */
+}
+
+h1 {
+  margin-left: 20px;
+  color: #a155b9;
+}
+
+ul {    
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin-left: 20px;
+  background: #fff;    
+  margin-bottom: 10px;
+  padding: 10px;
+  border-radius: 8px;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);    
+}
+.acciones {
+  margin-top: 20px;
+  margin-left: 20px;
+}
+
+p {
+  margin-left: 20px;
+}
+
+.btn {
     padding: 10px 15px;
     margin-right: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     font-weight: bold;
-  }
-  .btn-whatsapp {
+}
+.btn-whatsapp {
     background-color: #25D366;
     color: white;
-  }
-  .btn-vaciar {
+}
+.btn-vaciar {
     background-color: #ff4d4d;
     color: white;
-  }
-  .btn:hover {
+}
+.btn:hover {
     opacity: 0.9;
-  }
-  .volver {
+}
+.volver {
     display: inline-block;
     margin-top: 30px;
     text-decoration: none;
     color: #a155b9;
     font-weight: bold;
-  }
+}
 
-  .checkout-container {
+.checkout-container {
   display: flex;
   justify-content: center;
   padding: 40px 20px;
@@ -81,6 +110,27 @@ body {
 .col-50 {
   flex: 1;
   min-width: 300px;
+}
+/* Mejora los labels con íconos */
+label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 500;
+  margin-bottom: 6px;
+  color: #333;
+}
+
+/* Tamaño equilibrado para los íconos dentro de los labels */
+label i.fa {
+  font-size: 16px;
+  color: #5e5e5e;
+}
+
+/* Tamaño más pequeño para las tarjetas de crédito */
+.icon-container i {
+  font-size: 24px;
+  margin-right: 4px;
 }
 
 input[type="text"] {
@@ -143,4 +193,43 @@ input[type="submit"].btn:hover {
       font-size: 36px;
       margin-right: 12px;
     }
+
+    /* Pantalla de carga */
+.loader-container {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: #ffe4ec;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+}
+
+.loader-cupcake {
+  width: 100px;
+  height: 120px;
+  animation: bounce 1s infinite;
+}
+
+.loader-text {
+  margin-top: 20px;
+  font-size: 20px;
+  color: #d63384;
+  font-weight: bold;
+  font-family: 'Arial', sans-serif;
+}
+
+/* Animación de rebote */
+@keyframes bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-15px);
+  }
+}
 
