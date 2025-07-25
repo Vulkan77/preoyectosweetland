@@ -1,3 +1,5 @@
+
+
 // Cargar carrito desde localStorage (si existe)
 let cart = JSON.parse(localStorage.getItem("sweetland_cart")) || [];
 
